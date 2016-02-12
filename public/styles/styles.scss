@@ -1,0 +1,457 @@
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$google-color: #d50f25;
+$text-transform: uppercase;
+$icon-size: 2rem;
+
+@mixin flexContainer() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  //flex-direction: row;
+  //flex-wrap: wrap;
+}
+@mixin flexColumn() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin flexRow() {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+//.fixed {
+//  position: fixed;
+//  width: 100%;
+//}
+.orbitPic {
+  width: 100%;
+  height: 63vh;
+  background-color: gray;
+}
+.flexContainer {
+  @include flexContainer
+}
+
+.fixedTitle{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.split.button {
+  width: 100%;
+
+  &.facebook {
+    background: $facebook-color;
+    text-transform: $text-transform;
+
+    span {
+      //background: darken( $facebook-color, 10% );
+
+      &:after {
+        border: none;
+        font-family: "foundation-icons";
+        content: "\f1c4";
+        font-size: $icon-size;
+        line-height: 0.25rem;
+        margin-left: -0.7rem;
+        margin: 0em 0em 0em 0em;
+      }
+    }
+  }
+
+  &.twitter {
+    background: $twitter-color;
+    text-transform: $text-transform;
+
+    span {
+      //background: darken( $twitter-color, 10% );
+
+      &:after {
+        border: none;
+        font-family: "foundation-icons";
+        content: "\f1e4";
+        font-size: $icon-size;
+        line-height: 0.25rem;
+        margin-left: -0.7rem;
+      }
+    }
+  }
+
+  &.google {
+    background: $google-color;
+    text-transform: $text-transform;
+
+    span {
+      //background: darken( $google-color, 10% );
+      &:after {
+        border: none;
+        font-family: "foundation-icons";
+        content: "\f1ca";
+        font-size: $icon-size;
+        line-height: 0.25rem;
+        margin-left: -0.7rem;
+      }
+    }
+  }
+
+  &.left-icon {
+    text-align: right;
+    span {
+      left: 0;
+    }
+  }
+}
+
+.has-form {
+  position: absolute;
+  top: 0;
+  left: 6rem; // adjust distance from left here
+  min-width: 14rem; // adjust width here
+
+  @media only screen and (max-width: 40em) {
+    min-width: 10rem;
+    top: 0.5rem;
+
+    .button {
+      height: 1.85rem;
+    }
+  }
+}
+
+///////////////////////////////////////
+//shoes.html
+.shoeFilter {
+  position: absolute;
+  width: 12em;
+  z-index: 10;
+}
+
+.item-box {
+  border: .02em solid black;
+}
+
+.model {
+  font-weight: bold;
+}
+
+.item-image {
+  padding: 0% 0% 0% 18%;
+}
+
+.price {
+  color: forestgreen;
+  font-size: 1.25em;
+  font-weight: bold;
+  //font: bold;
+}
+
+.description {
+  font-size: .85em;
+}
+
+
+
+///////////////////////////////////////////
+//menu
+#footMotion {
+  padding: .5em;
+  //background-color: $twitter-color;
+  width: 9em;
+
+}
+
+
+
+.menuhead {
+  display: flex;
+  background-color: white;
+  height: 2em;
+  a {
+    height: 2em;
+    width: 4em;
+    background-color: white;
+  }
+}
+
+
+//////////////////////////////////////////
+//home
+
+.homeContainer {
+  padding: 0% 0% 0% 0%;
+}
+.homeThumbContainer {
+  @include flexContainer;
+  justify-content: center;
+  padding-left: 2em;
+}
+.footer {
+  background-color: #191919;
+  width: 100%;
+  height: 12.75em;
+  @include flexContainer;
+  p {
+    color: white;
+  }
+}
+//.menued {
+//  width: 20%;
+//  padding: 15% 0% 0% 0%;
+//  //border: 1px solid black;
+//  background: none;
+//  background-color: white;
+//}
+.homeheadertop {
+  height: 3em;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.homenav {
+  width: 100%;
+  height: 5em;
+}
+
+.sticky {
+  position: relative;
+  //top: 20%;
+}
+
+.homemenu {
+  //padding: 1rem;
+  padding: 13% 0em 0em 3em;
+  //box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.76);
+  margin: 0rem 0;
+  //display: flex;
+  width: 13em;
+  //background-color: white;
+}
+
+
+
+.homemenuheader {
+  padding-top: 3em;
+  //padding-left: 1em;
+
+}
+
+.homemenuheaderSelectProduct {
+  padding-top: 0em;
+  //padding-left: 1em;
+
+}
+
+.ulbox {
+
+}
+
+.mhead {
+  padding-left: 1em;
+}
+
+.menubox {
+  border: 1px solid #E5E5E5;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mbox {
+  //padding-right: 2em;
+}
+
+
+.moveContainer {
+  padding-left: 30%;
+}
+
+.adminmenu {
+  padding-top: 5%;
+}
+//////////
+.divAdminMenu {
+
+}
+.runIcon {
+  //width: 1em;
+  //position: absolute;
+  //padding-top: 2em;
+  height: 2em;
+  //padding-left: 1vh;
+  margin-left: auto;
+  //justify-self: flex-start !important;
+}
+.navBar {
+  background-color: white !important;
+  align-self: flex-start;
+}
+///////////////////////////////
+.menuContainer {
+  height: 100% !important;
+  background-color: white !important;
+  //right: 10%;
+  padding: 0% 0% 0% 0%;
+  flex: auto;
+  width: 20vh;
+  height: 100%;
+  z-index: 2;
+  //border: 1px solid black;
+}
+.pmselectProduct {
+  //border: 1px solid black;
+  //background-color: white;
+}
+//.productContainer {
+//  display: flex;
+//  height: 100%;
+//  width: 100%;
+//  flex-wrap: nowrap;
+//  flex-direction: row;
+//  border: 1px solid black;
+//
+//  .ps {
+//    height: 100%;
+//    width: 100%;
+//    //width: 70%;
+//    //padding-left: 20%;
+//  }
+//}
+.selectMenu {
+  padding: 0em 0em 0em 0em;
+  //box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.76);
+  margin: 0rem 0;
+  //display: flex;
+  width: 13em;
+}
+
+#addProducts {
+  //visibility: hidden;
+  //padding-left: 10%;
+}
+//////////////////////// admin shoes
+.profile-card {
+  padding: 1rem;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.76);
+  margin: 0rem 0;
+  background-color: #fff;
+  //img {
+  //  width: 8rem;
+  //  display: block;
+  //  margin: 2rem auto;
+  //  text-align: center;
+  //  border-radius: 50%;
+  //  box-shadow: 2px 2px 5px #888888;
+  //}
+}
+
+.shoeContainer {
+  height: 70%;
+  padding-right: 20vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  //padding: 20% 20% 20% 20%;
+  //
+  //max-height: 100%;
+}
+.adminContainer {
+
+  padding-left: 0 !important;
+  padding-right: 19vh;
+  width: 100%;
+  height: 10%;
+}
+
+.centerContent {
+  @include flexContainer
+}
+
+
+.flexColumn {
+@include flexColumn
+}
+.flexRow {
+
+}
+.shoesContainer {
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 70%;
+  padding-left: 1vh;
+  padding-right: 7vh;
+  //width: 100%;
+}
+//.shoes {
+//  max-height: 20%;
+//  min-height: 20%;
+//  padding-left: 20vh;
+//}
+////////////  selectProductPage
+.shoeCont {
+  height: 100%;
+  //padding-left: 5vh
+}
+.menuAndShoe {
+  //@include flexContainer
+  //display: flex;
+  //flex-direction: row;
+  //width: 100%;
+  background-color: #3b5998;
+  padding-right: 25vh;
+}
+
+@media (max-width: 650px) {
+  //.shoesContainer{
+  //  width: 80vh;
+  //  padding-left: 1vh;
+  //  padding-right: 23vh;
+  //}
+}
+
+///////////////////////  modal ////////////////
+
+.overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mod {
+  width: 50em;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  //top: 0;
+  //bottom: 0;
+  //right: 0;
+  //left: 0;
+
+  .modalbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    border: 1px solid black;
+  }
+}
+//////////////////
+
+
+

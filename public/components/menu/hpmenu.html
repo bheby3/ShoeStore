@@ -1,0 +1,74 @@
+<div class="Shoe Filter">
+    <div class="mhead"><a href="" class="off-canvas-submenu-call">Shoe Categories <span class="left"> + </span></a>
+    </div>
+    <ul class="off-canvas-submenu ulbox">
+
+        <a ui-sref="selectProduct">Neutral Shoes</a>
+        <br>
+        <a ui-sref="selectProduct">Support Shoes</a>
+        <br>
+        <a ui-sref="selectProduct">Motion Control Shoes</a>
+        <br>
+        <a ui-sref="selectProduct">Road Shoes</a>
+        <br>
+        <a ui-sref="selectProduct">Trail Shoes</a>
+        <br>
+        <a ui-sref="selectProduct">Track Shoes</a>
+        <br>
+        <a ui-sref="selectProduct">Cross Country Shoes</a>
+        <br>
+        <a ui-sref="selectProduct">Minimal Shoes</a>
+    </ul>
+    <div class="mhead"><a href="" class="off-canvas-submenu-call">Brand <span class="right"> + </span></a></div>
+    <ul class="off-canvas-submenu">
+        <br>
+        <input ng-model="filter.altra" ng-change="updateBrandArray('altra', filter.altra)"
+               type="checkbox"><label>Altra</label>
+        <br>
+        <input ng-model="filter.asics" ng-change="updateBrandArray('asics', filter.asics)"
+               type="checkbox"><label>Asics</label>
+        <br>
+        <input ng-model="filter.brooks" ng-change="updateBrandArray('brooks', filter.brooks)" type="checkbox"><label>Brooks</label>
+        <br>
+        <input ng-model="filter.hoka" ng-change="updateBrandArray('hoka', filter.hoka)"
+               type="checkbox"><label>Hoka</label>
+        <br>
+        <input ng-model="filter.mizuno" ng-change="updateBrandArray('mizuno', filter.mizuno)" type="checkbox"><label>Mizuno</label>
+        <br>
+        <input ng-model="filter.nike" ng-change="updateBrandArray('nike', filter.nike)"
+               type="checkbox"><label>Nike</label>
+        <br>
+        <input ng-model="filter.saucony" ng-change="updateBrandArray('saucony', filter.saucony)" type="checkbox"><label>Saucony</label>
+    </ul>
+
+    <!--<div class="row">-->
+    <!--<div class="small-10 columns">-->
+    <!--<div class="range-slider" data-slider data-options="display_selector: #days-off-count; initial: 28;">-->
+    <!--<span class="range-slider-handle" role="slider" tabindex="0"></span>-->
+    <!--<span class="range-slider-active-segment"></span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="small-2 columns">-->
+    <!--&lt;!&ndash;<input type="number" id="days-off-count" value="28" />&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+
+<!--<input type="checkbox"><label>Road</label>-->
+<!--<br>-->
+<!--<input type="checkbox"><label>Trail</label>-->
+<!--<br>-->
+<!--<input type="checkbox"><label>Track</label>-->
+
+<!--</div>-->
+
+
+<!--<script>-->
+    <!--$(document).foundation();-->
+    <!--$(".off-canvas-submenu").hide();-->
+    <!--$(".off-canvas-submenu-call").click(function () {-->
+        <!--var icon = $(this).parent().next(".off-canvas-submenu").is(':visible') ? '+' : '-';-->
+        <!--$(this).parent().next(".off-canvas-submenu").slideToggle('fast');-->
+        <!--$(this).find("span").text(icon);-->
+    <!--});-->
+<!--</script>-->
